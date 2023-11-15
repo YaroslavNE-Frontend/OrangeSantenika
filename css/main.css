@@ -164,10 +164,26 @@ img {
 }
 
 .main__header-profile-phone {
+  position: relative;
+  display: inline-block;
   color: #999;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.main__header-profile-phone:hover {
+  color: #F5702C;
+}
+.main__header-profile-phone svg {
+  position: absolute;
+  left: -24px;
+  fill: #999999;
+  transition: all 0.3s ease-in-out;
+}
+.main__header-profile-phone:hover svg {
+  fill: #F5702C;
 }
 
 .main__header-profile-menu-search-icon {
@@ -183,13 +199,105 @@ img {
   border: 1px solid #494949;
 }
 
-.main__header-profile-menu-form {
+.main__header-profile-menu-form__wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__header-profile-menu-form {
+  padding: 31px 56px;
+  position: absolute;
+  top: 15px;
+  min-width: 1086px;
+  height: 121px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .main__header-profile-menu-form-label {
   display: flex;
   align-items: center;
+}
+
+.main__header-profile-menu-form-text {
+  max-width: 218px;
+  margin-right: 40px;
+  color: #151716;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+
+.main__header-profile-menu-input {
+  padding: 16px 20px 16px 16px;
+  width: 581px;
+  color: #7B7B7B;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main__header-profile-menu-input:focus {
+  border-radius: 2px;
+  border: 1px solid #EC9F76;
+  outline: none;
+  background: #FFF;
+  box-shadow: 0px 0px 6px 0px #FF7028;
+}
+.main__header-profile-menu-input::-moz-placeholder {
+  color: #7B7B7B;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main__header-profile-menu-input::placeholder {
+  color: #7B7B7B;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main__header-profile-menu-form-btn {
+  width: 130px;
+  position: relative;
+  padding: 12px 24px;
+  margin-left: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18.667px;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 2.333px;
+  background: #FF7028;
+  border: none;
+  border-radius: 3px;
+  outline: 1px solid transparent;
+}
+.main__header-profile-menu-form-btn::before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 4px;
+  right: 0;
+  width: 130px;
+  height: 52px;
+  border: 2px solid #FF7028;
+  border-radius: 3px;
+}
+.main__header-profile-menu-form-btn:focus {
+  outline: 1px solid #d15315;
 }
 
 .none {
