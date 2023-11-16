@@ -145,11 +145,54 @@
 
 // ymaps.ready(init);
 
+// // МОДАЛЬНОЕ ОКНО
+// //Открыть/Закрыть модальное окно
+
+// const OpenBtn = document.getElementById('sign-in');
+// const ModalWrapper = document.querySelector('.modal__wrapper');
+// const CloseBtn = document.querySelector('.icon-close-btn');
+// const ModalAll = document.querySelector('.modal__wrapper .modal');
+
+// // Закрыть модальное окно Esc
+
+// window.addEventListener('keydown', (e) => {
+//     if (e.key === "Escape") {
+//         ModalWrapper.classList.remove('open')
+//     }
+// });
+
+// //Закрыть модальное окно при клике в не окна
+// ModalAll.addEventListener('click', event => {
+//     event._isClickWithInModal = true;
+// });
+
+// ModalWrapper.addEventListener('click', event => {
+//     if (event._isClickWithInModal) return;
+//     event.currentTarget.classList.remove('open');
+// });
+
+
+
+
+
 
 const SearchBtn = document.querySelector(".main__header-profile-menu-search-icon");
 const SearchForm = document.querySelector(".main__header-profile-menu-form__wrapper");
+const SearchAll = document.querySelector(".main__header-profile-menu-form__wrapper .main__header-profile-menu-form");
 
 SearchBtn.addEventListener('click', (e) => {
     SearchForm.classList.toggle('none');
-})
+});
+
+// Закрыть модальное окно Esc
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        SearchForm.classList.add('none')
+    }
+});
+
+
+
+
 

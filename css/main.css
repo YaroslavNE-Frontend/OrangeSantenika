@@ -60,6 +60,7 @@ img {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -134,7 +135,7 @@ img {
 }
 
 .main__header {
-  padding-top: 28px;
+  padding: 30px 0;
 }
 
 .main__header-nav {
@@ -206,6 +207,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .main__header-profile-menu-form {
@@ -298,6 +300,100 @@ img {
 }
 .main__header-profile-menu-form-btn:focus {
   outline: 1px solid #d15315;
+}
+
+.advantages {
+  padding: 80px 0;
+  background: #F6F6F6;
+}
+
+.advantages__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  -moz-column-gap: 122px;
+       column-gap: 122px;
+}
+
+.advantages__inner {
+  max-width: 635px;
+}
+
+.advantages-text {
+  margin-top: 0;
+  color: #151716;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.big--letter::first-letter {
+  margin-right: 12px;
+  initial-letter: 2;
+  color: #FE5B00;
+}
+
+.color--word {
+  color: #FE5B00;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.advantages-list {
+  padding: 0;
+  padding-left: 80px;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages-block {
+  position: relative;
+  max-width: 290px;
+}
+
+.decor--drawing {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: -80px;
+  background-image: url("../../../images/decor-drawing.svg");
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 49px;
+}
+
+.decor--apple {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: -80px;
+  background-image: url("../../../images/decor-apple.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 63px;
+}
+
+.advantages-block-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #151716;
+  font-family: Orenburg, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.advantages-block-text {
+  margin-top: 4px;
+  color: #7B7B7B;
+  font-family: PT Sans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .none {

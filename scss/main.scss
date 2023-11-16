@@ -74,6 +74,7 @@ img {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -151,6 +152,7 @@ img {
 // BLOCKS
 
 @import "./blocks/header";
+@import "./blocks/section/advantage";
 @import "./media";
 
 

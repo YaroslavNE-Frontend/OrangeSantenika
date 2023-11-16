@@ -1,5 +1,5 @@
 .main__header {
-    padding-top: 28px;
+    padding: 30px 0;
 }
 
 .main__header-nav {
@@ -91,6 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
 }
 
