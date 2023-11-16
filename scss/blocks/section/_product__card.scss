@@ -1,0 +1,45 @@
+.product__card {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.product__card-title {
+    color: #151716;
+    font-family: Orenburg, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+}
+
+.product__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
+}
+
+.product__card__block {
+    position: relative;
+    width: 100%;
+    max-width: 287px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.product__card__block-img {}
+
+.product__card__block-text {
+    margin: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}

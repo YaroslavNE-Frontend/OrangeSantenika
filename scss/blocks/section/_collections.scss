@@ -1,0 +1,106 @@
+.collections {
+    padding-bottom: 40px;
+    height: 544px;
+}
+
+.collections__wrapper {
+    display: flex;
+    width: 100%;
+    background: #1e1e1d;
+}
+
+.collections__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.collections__left-title {
+    margin-top: 67px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.collections__left-text {
+    margin-bottom: 40px;
+    max-width: 486px;
+    color: #BEBEBE;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.collections__left-link {
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 27px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #BEBEBE;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 6px;
+        transform: translate(-50% -50%);
+        left: 0;
+        background-repeat: no-repeat;
+        background-image: url("../../../images/arrow.svg");
+        width: 7px;
+        height: 12px;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 375px;
+        height: 1px;
+        top: -26px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0.00) 100%);
+    }
+}
+
+.collections__right {
+    width: 50%;
+    background-image: url("../../../images/collection.jpg");
+    background-repeat: no-repeat;
+    width: 748px;
+    height: 544px;
+    z-index: 2;
+}
+
+.collections__right-text-logo {
+    margin-top: 76px;
+    margin-left: 63px;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.collections__right-text-price {
+    margin: 0;
+    margin-left: 63px;
+    padding: 14px 16px;
+    max-width: 142px;
+    background: #FF7028;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
