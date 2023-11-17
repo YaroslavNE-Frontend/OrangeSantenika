@@ -192,6 +192,22 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
+const scrollBox = document.querySelector(".collections__left-box-text");
+const scrollText = document.querySelector(".collections__left-text");
+
+
+if (scrollText.clientHeight <= 192) {
+    scrollBox.style.overflowY = 'hidden';
+
+} else {
+    scrollBox.style.overflowY = 'scroll';
+}
+
+console.log(scrollText.clientHeight)
+
+
+
+
 
 
 

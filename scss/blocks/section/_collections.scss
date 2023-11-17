@@ -1,32 +1,50 @@
 .collections {
-    padding-bottom: 40px;
-    height: 544px;
+    min-height: 544px;
+    padding: 30px 0;
+
+
 }
 
 .collections__wrapper {
     display: flex;
     width: 100%;
-    background: #1e1e1d;
 }
 
 .collections__left {
+    padding: 67px 107px 27px 120px;
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-right: 20px;
+    background: #1e1e1d;
+
 }
 
 .collections__left-title {
-    margin-top: 67px;
+    margin-top: 0;
     color: #ffffff;
     font-size: 32px;
     font-weight: 400;
     line-height: 36px;
 }
 
+.collections__left-box-text {
+    width: 486px;
+    height: 325px;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+        background-color: #F6F6F6;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #FF7028
+    }
+}
+
 .collections__left-text {
-    margin-bottom: 40px;
     max-width: 486px;
+    min-height: 160px;
     color: #BEBEBE;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -38,7 +56,6 @@
     position: relative;
     display: inline-block;
     margin-top: auto;
-    margin-bottom: 27px;
     padding-left: 20px;
     text-decoration: none;
     color: #BEBEBE;
@@ -72,17 +89,19 @@
 }
 
 .collections__right {
+    padding-top: 76px;
+    padding-left: 42px;
     width: 50%;
     background-image: url("../../../images/collection.jpg");
     background-repeat: no-repeat;
     width: 748px;
     height: 544px;
     z-index: 2;
+    background-color: #ffffff;
 }
 
 .collections__right-text-logo {
-    margin-top: 76px;
-    margin-left: 63px;
+    margin-top: 0;
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -94,7 +113,6 @@
 
 .collections__right-text-price {
     margin: 0;
-    margin-left: 63px;
     padding: 14px 16px;
     max-width: 142px;
     background: #FF7028;
