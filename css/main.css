@@ -566,6 +566,84 @@ img {
   line-height: 24px;
 }
 
+.advantages {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.advantages-title {
+  margin-bottom: 54px;
+  color: #151716;
+  font-family: "Orenburg", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  padding-top: 114px;
+  position: relative;
+  max-width: 280px;
+}
+
+.decor--refund::after,
+.decor--quality::after,
+.decor--secure::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  right: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.decor--refund::after {
+  background-image: url("../../../images/advantages/refund.svg");
+}
+
+.decor--quality::after {
+  background-image: url("../../../images/advantages/quality.svg");
+}
+
+.decor--secure::after {
+  background-image: url("../../../images/advantages/secure.svg");
+}
+
+.advantages__block-title {
+  color: #151716;
+  text-align: center;
+  font-family: "Orenburg", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.advantages__block-text {
+  color: #7B7B7B;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .none {
   display: none;
 }/*# sourceMappingURL=main.css.map */
