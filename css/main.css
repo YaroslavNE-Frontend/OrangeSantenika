@@ -566,6 +566,139 @@ img {
   line-height: 24px;
 }
 
+.promotional {
+  padding-top: 80px;
+  padding-bottom: 32px;
+}
+
+.promotional-title {
+  color: #151716;
+  /* Section title */
+  font-family: "Orenburg", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+
+.promotional__list {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@media screen and (max-width: 1200px) {
+  .promotional__list {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+
+.promotional__item {
+  padding: 24px 20px 24px 20px;
+  background: #ffffff;
+  border: 1px solid #ECECEC;
+}
+
+.promotional__img-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  text-align: left;
+  height: 190px;
+}
+
+.promotional__lt-info {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.promotional__lb-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.promotional-sale {
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 2px;
+  background: #FF7028;
+  overflow: hidden;
+}
+
+.promotional-discount {
+  padding: 8px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 2px;
+  background: #285aff;
+  overflow: hidden;
+}
+
+.promotional-new {
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 2px;
+  background: #ff2828;
+  overflow: hidden;
+}
+
+.promotional__item-link {
+  text-decoration: none;
+  color: #151716;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.promotional__price {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.promotional__price-num {
+  color: #151716;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.promotional__s-num {
+  color: #A5A5A5;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration-line: strikethrough;
+}
+
 .advantages {
   background-color: #ffffff;
   padding: 80px 0;
