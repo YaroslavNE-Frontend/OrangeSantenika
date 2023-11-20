@@ -203,7 +203,16 @@ if (scrollText.clientHeight <= 192) {
     scrollBox.style.overflowY = 'scroll';
 }
 
-console.log(scrollText.clientHeight)
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+        1440: {
+            items: 1,
+        },
+    },
+});
 
 
 
