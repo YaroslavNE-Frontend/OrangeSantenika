@@ -1,0 +1,46 @@
+.advertisig {
+    height: 726px;
+}
+
+.advertisig-bg {
+    background-image: url("../../../images/advertisig-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advertisig__wrapper {
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.advertisig__block {
+    margin: 0 auto;
+    padding: 42px 220px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 160px;
+    background-color: #F6761A;
+    text-align: center;
+
+
+}
+
+.advertisig-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 765px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Orenburg", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.advertisig-big-text {
+    text-transform: uppercase;
+}
