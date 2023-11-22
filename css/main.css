@@ -1029,7 +1029,7 @@ i.fa.fa-angle-right {
 
 .advertisig__block {
   margin: 0 auto;
-  padding: 42px 220px;
+  padding: 42px 217px;
   display: flex;
   justify-content: center;
   max-width: 1200px;
@@ -1052,6 +1052,25 @@ i.fa.fa-angle-right {
 
 .advertisig-big-text {
   text-transform: uppercase;
+}
+
+.main-footer__top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-logo {
+  grid-column: 1/2;
+}
+
+.foooter__ifo-list {
+  grid-column: 2/4;
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
+.foooter__questions-list {
+  grid-column: 4/5;
 }
 
 .none {

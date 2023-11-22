@@ -1,84 +1,43 @@
-.main-footer {
-    padding: 40px 116px 58px 116px;
-    background-image: url("../../images/footer-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-footer {}
+
+.main-footer__wrapper {}
+
+.main-footer__top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.footer-wrap {
-    display: flex;
-    align-items: center;
+.footer-logo {
+    grid-column: 1 / 2;
 }
 
-.main-footer-list {
-    display: flex;
-    padding: 0;
-    margin: 0 auto 0 40px;
-    list-style: none;
-    gap: 40px;
+.foooter__ifo-list {
+    grid-column: 2 / 4;
+    column-count: 2;
 }
 
-.main-footer-link {
-    text-decoration: none;
-    color: #414141;
-    font-family: Rubik, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    transition: color 0.3s ease-in-out;
+.foooter__ifo-item {}
 
-    &:hover {
-        color: #f63;
-    }
+.foooter__ifo-link {}
+
+.foooter__questions-list {
+    grid-column: 4 / 5;
 }
 
-.main-footer-social-list {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+.foooter__questions-item {}
 
-.main-footer-social-item {
+.foooter__questions-title {}
 
-    &:not(:first-child) {
-        margin-left: 16px;
-    }
-}
+.foooter__questions-link {}
 
-.main-footer-social-link {
-    display: inline-block;
+.questions--email {}
 
-}
+.questions--phone {}
 
-.main-footer-logo-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+.foooter__social-list {}
 
+.main-footer__copyright {}
 
-.main-footer-social-link--phone {
-    margin-left: 72px;
-    text-decoration: none;
-    color: #414141;
-    font-family: Rubik, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
+.main-footer__copyright-text {}
 
-.main-footer-address-span {
-    display: inline-block;
-    margin-right: 8px;
-    color: #414141;
-    font-family: Rubik, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: right;
-}
+.main-footer__copyright-link {}
