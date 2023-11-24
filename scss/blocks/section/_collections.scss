@@ -128,6 +128,7 @@
 }
 
 .collections__right {
+    position: relative;
     width: 100%;
     background-color: #ffffff;
 
@@ -144,8 +145,9 @@
 
 .collections__right-text-logo {
     position: absolute;
-    left: 0;
+    left: 40px;
     right: 0;
+    top: 40px;
     margin-top: 0;
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
@@ -158,7 +160,8 @@
 
 .collections__right-text-price {
     position: absolute;
-    left: 0;
+    top: 90px;
+    left: 40px;
     right: 0;
     margin: 0;
     padding: 14px 16px;
