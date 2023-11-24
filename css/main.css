@@ -541,7 +541,7 @@ i.fa.fa-angle-right {
 }
 
 .advantages {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #ffffff;
 }
 
@@ -855,7 +855,6 @@ i.fa.fa-angle-right {
 
 .promotional-title {
   color: #151716;
-  /* Section title */
   font-family: "Orenburg", sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -865,15 +864,10 @@ i.fa.fa-angle-right {
 
 .promotional__list {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, minmax(262px, 1fr));
   padding: 0;
   margin: 0;
   list-style: none;
-}
-@media screen and (max-width: 1200px) {
-  .promotional__list {
-    grid-template-columns: repeat(auto-fit, 300px);
-  }
 }
 
 .promotional__item {
@@ -1060,8 +1054,11 @@ i.fa.fa-angle-right {
   line-height: 20px;
 }
 
-.advertisig__wrapper {
+.advertisig {
   position: relative;
+}
+
+.advertisig__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

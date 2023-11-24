@@ -1,7 +1,8 @@
-.advertisig {}
+.advertisig {
+    position: relative;
+}
 
 .advertisig__wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -13,10 +14,6 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-
-    // @media screen and (max-width:850px) {
-    //     display: none;
-    // }
 }
 
 .advertisig__block {
