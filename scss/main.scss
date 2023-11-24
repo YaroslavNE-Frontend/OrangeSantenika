@@ -123,6 +123,14 @@ img {
   line-height: 96px;
 }
 
+a {
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 .link {
   position: relative;
   padding-right: 32px;
