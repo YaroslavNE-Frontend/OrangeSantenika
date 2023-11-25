@@ -1,16 +1,36 @@
+.main__banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
 .swiper {
     width: 100%;
-    height: 600px;
-    z-index: 999;
+    height: 700px;
+}
+
+@keyframes Animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .swiper-slide {
-    text-align: center;
+    padding-left: 120px;
+    position: relative;
     font-size: 18px;
-    background: #fff;
+    background: rgba(6, 7, 7, 0.85);
+    backdrop-filter: blur(75px);
     display: flex;
-    justify-content: center;
     align-items: center;
+    animation-name: Animation;
+    animation-duration: 0.8s;
 }
 
 .swiper-slide img {
@@ -20,6 +40,33 @@
     object-fit: cover;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 120px;
+    bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+    background: #575757;
+    border-radius: 0;
+    width: 31px;
+    height: 2px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet:hover {
+    background-color: #F5702C;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F5702C;
+}
 
 .main__banner__left {
     max-width: 600px;
@@ -121,246 +168,3 @@
     width: 100%;
     height: 100%;
 }
-
-
-
-
-// adadadad
-
-// .main__banner {
-//     position: absolute;
-//     top: calc(0px - 56px);
-//     left: 0;
-//     right: 0;
-//     background: rgba(6, 7, 7, 0.85);
-//     backdrop-filter: blur(75px);
-//     width: 1440px;
-//     min-height: 694px;
-//     margin: 0 auto;
-// }
-
-
-// .blockSlider {
-//     padding-top: 66px;
-//     display: flex;
-//     max-width: 1440px;
-//     width: 100%;
-//     min-height: 600px;
-//     overflow: hidden;
-// }
-
-// .FullArea {
-//     display: flex;
-//     width: 100%;
-//     height: 100%;
-//     height: 684px;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .pointsAreaSize {
-//     position: absolute;
-//     left: 100px;
-//     min-width: 115px;
-//     height: 10px;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     gap: 20px;
-//     bottom: 5%;
-// }
-
-// .point__inner {
-//     left: 0;
-//     right: 0;
-//     height: 60px;
-//     padding: 30px 0;
-//     cursor: pointer;
-// }
-
-// .point {
-//     display: block;
-//     width: 31px;
-//     height: 2px;
-//     background: #575757;
-//     transition: all 0.3s ease-in-out;
-// }
-
-// .point__inner:hover>.point {
-//     background-color: #de5e1d;
-// }
-
-// .point.active {
-//     background-color: #F5702C;
-// }
-
-// .imagesArea {
-//     width: 100%;
-//     height: 100%;
-//     padding-left: 80px;
-// }
-
-// .swiper-slide {
-//     display: none;
-//     align-items: center;
-//     width: 100%;
-//     height: 100%;
-//     overflow: hidden;
-//     animation-name: Animation;
-//     animation-duration: 0.8s;
-// }
-
-// .activeImage {
-//     display: flex;
-// }
-
-// .btnsAreaSize {
-//     position: absolute;
-//     display: flex;
-//     width: 95%;
-//     justify-content: flex-start;
-// }
-
-// i.fa.fa-angle-left,
-// i.fa.fa-angle-right {
-//     color: rgb(115, 126, 250);
-//     font-size: 24px;
-//     cursor: pointer;
-//     font-weight: 800;
-// }
-
-// .blockArrow {
-//     display: flex;
-//     width: 40px;
-//     height: 40px;
-//     background-color: white;
-//     border: 1ps solid white;
-//     border-radius: 50px;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .blockArrow:hover {
-//     background: rgba(39, 39, 39, 0.59);
-//     border: 1px solid white;
-//     color: white;
-//     cursor: pointer;
-// }
-
-// .blockArrow:active {
-//     background: rgba(16, 16, 16, 0.59);
-//     border: 1px solid white;
-//     color: white;
-//     cursor: pointer;
-// }
-
-// @keyframes Animation {
-//     0% {
-//         opacity: 0;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// .main__banner__left {
-//     max-width: 600px;
-// }
-
-// .main__banner__left-title {
-//     margin-bottom: 54px;
-//     color: #fff;
-//     font-family: "Orenburg", sans-serif;
-//     font-size: 60px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 64px;
-// }
-
-// .main__banner__left-list {
-//     padding: 0;
-//     padding-left: 30px;
-//     margin: 0;
-//     list-style: url("../../../images/arrow.svg");
-// }
-
-// .main__banner__left-item {
-//     position: relative;
-//     padding-bottom: 49px;
-
-//     &:not(:last-child)::after {
-//         width: 375px;
-//         height: 1px;
-//         content: "";
-//         position: absolute;
-//         bottom: 20px;
-//         left: -30px;
-//         right: 0;
-//         background: linear-gradient(90deg, #4B4B4B 0%, rgba(38, 38, 37, 0.00) 100%);
-//     }
-
-// }
-
-// .main__banner__left-link {
-//     display: inline-block;
-//     text-decoration: none;
-//     color: #BEBEBE;
-//     font-family: "PT Sans", sans-serif;
-//     font-size: 20px;
-//     font-weight: 400;
-//     line-height: 20px;
-// }
-
-// .main__banner__right {
-//     position: absolute;
-//     right: 65px;
-//     bottom: 0;
-// }
-
-// .main__banner-img-price {
-//     position: absolute;
-//     min-width: 141px;
-//     min-height: 50px;
-//     top: 470px;
-//     left: 125px;
-//     right: 0;
-//     width: 130px;
-//     padding: 12px 24px;
-//     margin-left: 12px;
-//     color: #ffffff;
-//     cursor: pointer;
-//     text-align: center;
-//     font-family: "PT Sans", sans-serif;
-//     font-size: 18.667px;
-//     font-weight: 700;
-//     line-height: 28px;
-//     border-radius: 2.333px;
-//     background: #FF7028;
-//     border: none;
-//     border-radius: 3px;
-//     outline: 1px solid transparent;
-
-//     &::before {
-//         position: absolute;
-//         content: '';
-//         left: 7px;
-//         top: 4px;
-//         right: 0;
-//         width: 130px;
-//         height: 48px;
-//         border: 2px solid #FF7028;
-//         border-radius: 3px;
-//     }
-
-//     &:focus {
-//         outline: 1px solid #d15315;
-//     }
-
-
-// }
-
-// .main__banner-img {
-//     width: 100%;
-//     height: 100%;
-// }

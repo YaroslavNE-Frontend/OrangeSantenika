@@ -390,11 +390,17 @@ if (scrollText.clientHeight <= 192) {
 
 
 const swiper = new Swiper(".mySwiper", {
-    // cssMode: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    loop: true,
+    autoplay: {
+        delay: 0,
     },
+    speed: 3000,
+    slidesPerView: 1,
+    // cssMode: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
