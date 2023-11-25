@@ -288,104 +288,119 @@ if (scrollText.clientHeight <= 192) {
 //     TimerImage = setInterval(() => slowSlider(), second)
 // })
 
+// SliderOld
+
+// let pointInner = document.querySelectorAll('.point__inner')
+// let point = document.querySelectorAll('.point')
+// let imageSlider = document.querySelectorAll('.imageSlider')
+// let leftBtn = document.getElementById('leftBtn')
+// let rightBtn = document.getElementById('rightBtn')
+
+// point[0].classList.add('active')
+// imageSlider[0].classList.add('activeImage')
+
+// let counter = 0;
 
 
-let pointInner = document.querySelectorAll('.point__inner')
-let point = document.querySelectorAll('.point')
-let imageSlider = document.querySelectorAll('.imageSlider')
-let leftBtn = document.getElementById('leftBtn')
-let rightBtn = document.getElementById('rightBtn')
 
-point[0].classList.add('active')
-imageSlider[0].classList.add('activeImage')
+// for (let i = 0; i < point.length; i++) {
+//     pointInner[i].addEventListener('click', () => {
+//         for (let k = 0; k < imageSlider.length; k++) {
+//             point[k].classList.remove('active')
+//             imageSlider[k].classList.remove('activeImage')
+//         }
+//         counter = i;
+//         imageSlider[counter].classList.add('activeImage');
+//         point[counter].classList.add('active');
+//     })
+// }
 
-let counter = 0;
+// leftBtn.addEventListener('click', () => {
+//     for (let k = 0; k < imageSlider.length; k++) {
+//         point[k].classList.remove('active')
+//         imageSlider[k].classList.remove('activeImage')
+//     }
+//     counter--
+//     if (counter < 0) {
+//         counter = imageSlider.length - 1
+//     }
+//     imageSlider[counter].classList.add('activeImage');
+//     point[counter].classList.add('active');
+// })
 
-
-
-for (let i = 0; i < point.length; i++) {
-    pointInner[i].addEventListener('click', () => {
-        for (let k = 0; k < imageSlider.length; k++) {
-            point[k].classList.remove('active')
-            imageSlider[k].classList.remove('activeImage')
-        }
-        counter = i;
-        imageSlider[counter].classList.add('activeImage');
-        point[counter].classList.add('active');
-    })
-}
-
-leftBtn.addEventListener('click', () => {
-    for (let k = 0; k < imageSlider.length; k++) {
-        point[k].classList.remove('active')
-        imageSlider[k].classList.remove('activeImage')
-    }
-    counter--
-    if (counter < 0) {
-        counter = imageSlider.length - 1
-    }
-    imageSlider[counter].classList.add('activeImage');
-    point[counter].classList.add('active');
-})
-
-rightBtn.addEventListener('click', () => {
-    for (let k = 0; k < imageSlider.length; k++) {
-        point[k].classList.remove('active')
-        imageSlider[k].classList.remove('activeImage')
-    }
-    counter++
-    if (counter >= imageSlider.length) {
-        counter = 0
-    }
-    imageSlider[counter].classList.add('activeImage');
-    point[counter].classList.add('active');
-})
+// rightBtn.addEventListener('click', () => {
+//     for (let k = 0; k < imageSlider.length; k++) {
+//         point[k].classList.remove('active')
+//         imageSlider[k].classList.remove('activeImage')
+//     }
+//     counter++
+//     if (counter >= imageSlider.length) {
+//         counter = 0
+//     }
+//     imageSlider[counter].classList.add('activeImage');
+//     point[counter].classList.add('active');
+// })
 
 
-function slowSlider() {
-    for (let k = 0; k < imageSlider.length; k++) {
-        point[k].classList.remove('active')
-        imageSlider[k].classList.remove('activeImage')
-    }
-    counter++
-    if (counter >= imageSlider.length) {
-        counter = 0
-    }
-    imageSlider[counter].classList.add('activeImage');
-    point[counter].classList.add('active');
-}
+// function slowSlider() {
+//     for (let k = 0; k < imageSlider.length; k++) {
+//         point[k].classList.remove('active')
+//         imageSlider[k].classList.remove('activeImage')
+//     }
+//     counter++
+//     if (counter >= imageSlider.length) {
+//         counter = 0
+//     }
+//     imageSlider[counter].classList.add('activeImage');
+//     point[counter].classList.add('active');
+// }
 
-let second = 1300 * 2
-let TimerImage = setInterval(() => slowSlider(), second)
+// let second = 1300 * 2
+// let TimerImage = setInterval(() => slowSlider(), second)
 
-let blockSlider = document.getElementById('blockSlider')
-blockSlider.addEventListener('mouseover', () => {
-    clearInterval(TimerImage)
-})
+// let blockSlider = document.getElementById('blockSlider')
+// blockSlider.addEventListener('mouseover', () => {
+//     clearInterval(TimerImage)
+// })
 
-blockSlider.addEventListener('mouseleave', () => {
-    TimerImage = setInterval(() => slowSlider(), second)
-})
+// blockSlider.addEventListener('mouseleave', () => {
+//     TimerImage = setInterval(() => slowSlider(), second)
+// })
 
-// Arrow Scrol-top
+// // Arrow Scrol-top
 
-window.onscroll = function() {
-    let scrollElem = document.getElementById("main-footer__arrow");
-    if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
-        scrollElem.style.opacity = "1";
-    } else {
-        scrollElem.style.opacity = "0";
-    }
-}
+// window.onscroll = function() {
+//     let scrollElem = document.getElementById("main-footer__arrow");
+//     if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
+//         scrollElem.style.opacity = "1";
+//     } else {
+//         scrollElem.style.opacity = "0";
+//     }
+// }
 
-let timeOut;
-function goUp() {
-    let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-    if(top > 0) {
-        window.scrollBy(0,-100);
-        timeOut = setTimeout('goUp()',20);
-    } else clearTimeout(timeOut);
-}
+// let timeOut;
+// function goUp() {
+//     let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+//     if(top > 0) {
+//         window.scrollBy(0,-100);
+//         timeOut = setTimeout('goUp()',20);
+//     } else clearTimeout(timeOut);
+// }
+
+
+
+const swiper = new Swiper(".mySwiper", {
+    // cssMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
 
 
 

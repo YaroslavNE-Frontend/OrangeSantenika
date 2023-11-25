@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css" />
   <title>Главная страница магазина сантехники</title>
 </head>
@@ -83,7 +84,40 @@
   </header>
   <main class="main">
     <section class="main__banner">
-      <div class="main-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main__banner__left">
+              <h1 class="main__banner__left-title">Сантехника и мебель для ванной комнаты</h1>
+              <ul class="main__banner__left-list">
+                <li class="main__banner__left-item">
+                  <a class="main__banner__left-link" href="#">О компании</a>
+                </li>
+                <li class="main__banner__left-item">
+                  <a class="main__banner__left-link" href="#">О продукции</a>
+                </li>
+                <li class="main__banner__left-item">
+                  <a class="main__banner__left-link" href="#">Каталог товаров</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main__banner__right">
+              <img class="main__banner-img" width="639" height="597" src="./images/main__banner.png" alt="Большой кран">
+              <span class="main__banner-img-price">от 4 990 ₽</span>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+
+      <!-- <div class="main-container">
         <div class="blockSlider" id="blockSlider">
           <div class="FullArea">
             <div class="imagesArea">
@@ -170,7 +204,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="advantage">
       <div class="main-container">
@@ -453,7 +487,7 @@
     </div>
   </footer>
   <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
