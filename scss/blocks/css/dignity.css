@@ -1,14 +1,13 @@
 .dignity {
-  padding-bottom: 80px;
-  padding-top: 62px;
-  background-color: #ffffff;
+  padding: 62px 124px 40px 124px;
+  background: #F6F6F6;
 }
 
 .dignity__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 105px;
+  padding: 0;
   margin: 0;
   list-style: none;
   -moz-column-gap: 134px;

@@ -1,6 +1,6 @@
 .product__card {
     background-color: #ffffff;
-    padding: 80px 0;
+    padding: 80px 120px;
 }
 
 .product__card-title {
@@ -14,9 +14,9 @@
 
 .product__card__wrapper {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 24px;
     row-gap: 24px;
 
     @media screen and (max-width:768px) {
@@ -32,7 +32,9 @@
     border-radius: 4px;
 }
 
-.product__card__block-img {}
+.product__card__block-link {
+    display: inline-block;
+}
 
 .product__card__block-text {
     margin: 0;
