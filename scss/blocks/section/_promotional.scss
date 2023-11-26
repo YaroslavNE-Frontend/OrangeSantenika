@@ -1,10 +1,10 @@
 .promotional {
-
-    padding-top: 80px;
-    padding-bottom: 32px;
+    padding: 39px 60px 32px 120px;
 }
 
 .promotional-title {
+    margin-top: 0;
+    margin-bottom: 21px;
     color: #151716;
     font-family: "Orenburg", sans-serif;
     font-size: 32px;
@@ -15,13 +15,16 @@
 
 .promotional__list {
     display: grid;
-    grid-template-columns: repeat(4, minmax(262px, 1fr));
+    grid-template-columns: repeat(4, minmax(262px, 300px));
+    grid-template-rows: auto;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .promotional__item {
+    display: flex;
+    flex-direction: column;
     padding: 24px 20px 24px 20px;
     background: #ffffff;
     border: 1px solid #ECECEC;
@@ -38,9 +41,10 @@
 }
 
 .promotional__lt-info {
+    min-height: 36px;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: -9px;
+    top: -13px;
     z-index: 1;
 }
 
@@ -54,13 +58,15 @@
 }
 
 .promotional-sale {
-    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 11px 8px 11px;
     color: #ffffff;
     text-align: center;
     font-family: PT Sans;
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px;
     border-radius: 2px;
     background: #FF7028;
     overflow: hidden;
@@ -96,6 +102,11 @@
 
 .promotional__item-link {
     text-decoration: none;
+
+}
+
+.promotional__item-title {
+    max-width: 260px;
     color: #151716;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -104,12 +115,14 @@
 }
 
 .promotional__price {
+    margin-top: auto;
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
 
 .promotional__price-num {
+    margin: 0;
     color: #151716;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
