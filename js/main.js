@@ -367,25 +367,25 @@ if (scrollText.clientHeight <= 192) {
 //     TimerImage = setInterval(() => slowSlider(), second)
 // })
 
-// // Arrow Scrol-top
+// Arrow Scrol-top
 
-// window.onscroll = function() {
-//     let scrollElem = document.getElementById("main-footer__arrow");
-//     if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
-//         scrollElem.style.opacity = "1";
-//     } else {
-//         scrollElem.style.opacity = "0";
-//     }
-// }
+window.onscroll = function() {
+    let scrollElem = document.getElementById("main-footer__arrow");
+    if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
+        scrollElem.style.opacity = "1";
+    } else {
+        scrollElem.style.opacity = "0";
+    }
+}
 
-// let timeOut;
-// function goUp() {
-//     let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-//     if(top > 0) {
-//         window.scrollBy(0,-100);
-//         timeOut = setTimeout('goUp()',20);
-//     } else clearTimeout(timeOut);
-// }
+let timeOut;
+function goUp() {
+    let top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    if(top > 0) {
+        window.scrollBy(0,-100);
+        timeOut = setTimeout('goUp()',20);
+    } else clearTimeout(timeOut);
+}
 
 
 
