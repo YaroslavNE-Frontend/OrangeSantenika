@@ -481,17 +481,29 @@ a:hover {
   height: 100%;
 }
 
-.advantages {
-  padding: 40px 0;
-  background: #ffffff;
+.dignity {
+  padding-bottom: 80px;
+  padding-top: 62px;
+  background-color: #ffffff;
 }
 
-.advantages__inner {
+.dignity__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 105px;
+  margin: 0;
+  list-style: none;
+  -moz-column-gap: 134px;
+       column-gap: 134px;
+}
+
+.dignity__inner {
   max-width: 635px;
   height: auto;
 }
 
-.advantages-text {
+.dignity-text {
   margin-bottom: 25px;
   color: #151716;
   font-family: "PT Sans", sans-serif;
@@ -514,18 +526,18 @@ a:hover {
   line-height: 32px;
 }
 
-.advantages-list {
+.dignity-list {
   padding: 0;
   padding-left: 80px;
   margin: 0;
   list-style: none;
 }
 
-.advantages-item:not(:last-child) {
+.dignity-item:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.advantages-block {
+.dignity-block {
   position: relative;
   max-width: 290px;
 }
@@ -554,7 +566,7 @@ a:hover {
   height: 63px;
 }
 
-.advantages-block-title {
+.dignity-block-title {
   margin-top: 20px;
   margin-bottom: 0;
   color: #151716;
@@ -563,7 +575,7 @@ a:hover {
   font-weight: 700;
 }
 
-.advantages-block-text {
+.dignity-block-text {
   margin-top: 4px;
   color: #7B7B7B;
   font-family: PT Sans, sans-serif;
@@ -913,10 +925,9 @@ a:hover {
   text-decoration-line: strikethrough;
 }
 
-.advantage {
-  padding-bottom: 80px;
-  padding-top: 62px;
-  background-color: #ffffff;
+.advantages {
+  padding: 40px 0;
+  background: #ffffff;
 }
 
 .advantages-title {
@@ -933,13 +944,10 @@ a:hover {
 
 .advantages__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0 105px;
+  justify-content: space-between;
   margin: 0;
+  padding: 0;
   list-style: none;
-  -moz-column-gap: 134px;
-       column-gap: 134px;
 }
 
 .advantages__item {
