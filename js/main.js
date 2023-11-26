@@ -391,11 +391,11 @@ function goUp() {
 
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    autoplay: {
-        delay: 0,
-    },
-    speed: 3000,
-    slidesPerView: 1,
+    // autoplay: {
+    //     delay: 0,
+    // },
+    // speed: 3000,
+    // slidesPerView: 1,
     // cssMode: true,
     // navigation: {
     //     nextEl: ".swiper-button-next",
