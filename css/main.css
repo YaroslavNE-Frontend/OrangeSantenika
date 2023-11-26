@@ -944,7 +944,8 @@ a:hover {
 }
 
 .advantages-title {
-  margin-bottom: 54px;
+  margin-top: 0;
+  margin-bottom: 50px;
   color: #151716;
   font-family: "Orenburg", sans-serif;
   font-size: 32px;
@@ -957,7 +958,9 @@ a:hover {
 
 .advantages__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
