@@ -1,4 +1,6 @@
 .promotional {
+    min-width: 100%;
+    overflow-x: auto;
     padding: clamp(0.938rem, 0.509rem + 2.14vw, 2.438rem) clamp(0.938rem, 0.134rem + 4.02vw, 3.75rem) clamp(0.938rem, 0.634rem + 1.52vw, 2rem) clamp(0.938rem, -0.938rem + 9.38vw, 7.5rem);
 }
 

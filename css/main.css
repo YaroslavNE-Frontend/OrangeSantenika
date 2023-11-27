@@ -359,6 +359,11 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 700px) {
+  .swiper-slide img {
+    height: 492px;
+  }
+}
 @media screen and (max-width: 360px) {
   .swiper-slide img {
     height: 292px;
@@ -478,21 +483,21 @@ a:hover {
 }
 
 .main__banner-img-price {
+  display: block;
   padding: 12px 16px;
   position: absolute;
-  min-width: 141px;
-  min-height: 50px;
+  width: 141px;
   top: 450px;
   left: 195px;
   right: 0;
-  width: 130px;
+  width: 141px;
   color: #ffffff;
   cursor: pointer;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   border-radius: 2.333px;
   background: #FF7028;
   border: none;
@@ -506,12 +511,34 @@ a:hover {
   top: 4px;
   right: 0;
   width: 141px;
-  height: 52px;
+  height: 50px;
   border: 2px solid #FF7028;
   border-radius: 3px;
 }
+@media screen and (max-width: 700px) {
+  .main__banner-img-price::before {
+    width: 115px;
+    height: 44px;
+  }
+}
 .main__banner-img-price:focus {
   outline: 1px solid #d15315;
+}
+@media screen and (max-width: 700px) {
+  .main__banner-img-price {
+    padding: 12px 12px;
+    width: 115px;
+    top: 310px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main__banner-img-price {
+    top: 163px;
+    left: -14px;
+  }
 }
 
 .main__banner-img {
@@ -843,6 +870,8 @@ a:hover {
 }
 
 .promotional {
+  min-width: 100%;
+  overflow-x: auto;
   padding: clamp(0.938rem, 0.509rem + 2.14vw, 2.438rem) clamp(0.938rem, 0.134rem + 4.02vw, 3.75rem) clamp(0.938rem, 0.634rem + 1.52vw, 2rem) clamp(0.938rem, -0.938rem + 9.38vw, 7.5rem);
 }
 
