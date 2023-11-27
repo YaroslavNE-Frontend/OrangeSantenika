@@ -1,5 +1,5 @@
 .dignity {
-  padding: 62px 124px 65px 124px;
+  padding: clamp(2.5rem, 2.107rem + 1.96vw, 3.875rem) clamp(0.938rem, -1.009rem + 9.73vw, 7.75rem);
   background: #F6F6F6;
 }
 

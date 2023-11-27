@@ -1,5 +1,5 @@
 .promotional {
-    padding: 39px 60px 32px 120px;
+    padding: clamp(0.938rem, 0.509rem + 2.14vw, 2.438rem) clamp(0.938rem, 0.134rem + 4.02vw, 3.75rem) clamp(0.938rem, 0.634rem + 1.52vw, 2rem) clamp(0.938rem, -0.938rem + 9.38vw, 7.5rem);
 }
 
 .promotional-title {
@@ -20,7 +20,12 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @media screen and (max-width:800px) {
+        column-gap: 16px;
+    }
 }
+
 
 .promotional__item {
     display: flex;

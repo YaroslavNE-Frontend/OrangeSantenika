@@ -1,6 +1,7 @@
 .product__card {
     background-color: #ffffff;
-    padding: 53px 120px 50px 120px;
+    padding: clamp(0.938rem, 0.313rem + 3.13vw, 3.125rem) clamp(0.938rem, -0.938rem + 9.38vw, 7.5rem);
+
 }
 
 .product__card-title {

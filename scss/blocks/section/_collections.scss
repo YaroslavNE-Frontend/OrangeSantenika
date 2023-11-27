@@ -1,6 +1,6 @@
 .collections {
     min-height: 544px;
-    padding: 50px 0 40px 0;
+    padding: clamp(0.938rem, 0.313rem + 3.13vw, 3.125rem) 0 clamp(0.938rem, 0.491rem + 2.23vw, 2.5rem);
 
 
 }
