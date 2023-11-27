@@ -1,15 +1,11 @@
 .main-footer {
+    padding: 60px 116px 60px 120px;
     background-color: #202122;
-}
-
-.main-footer__wrapper {
-    padding-top: 60px;
 }
 
 .main-footer__top {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 40px;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);
@@ -167,8 +163,8 @@
 
 .main-footer__copyright {
     position: relative;
-    margin-top: 55px;
-    padding-bottom: 32px;
+    margin-top: 52px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;

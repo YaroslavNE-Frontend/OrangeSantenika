@@ -320,13 +320,15 @@ a:hover {
   width: 100%;
   height: 694px;
 }
-
-@keyframes Animation {
+@keyframes pulse {
   0% {
-    opacity: 0;
+    transform: scaleX(1);
   }
-  100% {
-    opacity: 1;
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 .swiper-slide {
@@ -338,7 +340,7 @@ a:hover {
           backdrop-filter: blur(75px);
   display: flex;
   align-items: center;
-  animation-name: Animation;
+  animation-name: pulse;
   animation-duration: 0.8s;
 }
 
@@ -939,13 +941,13 @@ a:hover {
 }
 
 .advantages {
-  padding: 40px 0;
+  padding: 40px 200px 80px 200px;
   background: #ffffff;
 }
 
 .advantages-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  max-width: 303px;
+  margin: 0 auto 50px auto;
   color: #151716;
   font-family: "Orenburg", sans-serif;
   font-size: 32px;
@@ -957,10 +959,11 @@ a:hover {
 }
 
 .advantages__wrapper {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -969,17 +972,29 @@ a:hover {
 .advantages__item {
   padding-top: 114px;
   position: relative;
-  max-width: 280px;
+  min-width: 280px;
 }
 
 .decor--refund::after,
-.decor--quality::after,
-.decor--secure::after {
+.decor--quality::after {
   content: "";
   width: 90px;
   height: 90px;
   position: absolute;
   top: 55px;
+  left: 50%;
+  right: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.decor--secure::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 51px;
   left: 50%;
   right: 50%;
   background-repeat: no-repeat;
@@ -1000,6 +1015,8 @@ a:hover {
 }
 
 .advantages__block-title {
+  margin-top: 6px;
+  margin-bottom: 10px;
   color: #151716;
   text-align: center;
   font-family: "Orenburg", sans-serif;
@@ -1008,6 +1025,7 @@ a:hover {
 }
 
 .advantages__block-text {
+  margin-bottom: 0;
   color: #7B7B7B;
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -1078,18 +1096,13 @@ a:hover {
 }
 
 .main-footer {
+  padding: 60px 116px 60px 120px;
   background-color: #202122;
-}
-
-.main-footer__wrapper {
-  padding-top: 60px;
 }
 
 .main-footer__top {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
 }
 @media screen and (max-width: 1200px) {
   .main-footer__top {
@@ -1248,8 +1261,8 @@ a:hover {
 
 .main-footer__copyright {
   position: relative;
-  margin-top: 55px;
-  padding-bottom: 32px;
+  margin-top: 52px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;

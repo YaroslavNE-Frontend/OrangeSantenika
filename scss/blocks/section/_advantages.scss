@@ -1,11 +1,11 @@
 .advantages {
-    padding: 40px 0;
+    padding: 40px 200px 80px 200px;
     background: #ffffff;
 }
 
 .advantages-title {
-    margin-top: 0;
-    margin-bottom: 50px;
+    max-width: 303px;
+    margin: 0 auto 50px auto;
     color: #151716;
     font-family: "Orenburg", sans-serif;
     font-size: 32px;
@@ -17,9 +17,11 @@
 }
 
 .advantages__wrapper {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    column-gap: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -28,17 +30,29 @@
 .advantages__item {
     padding-top: 114px;
     position: relative;
-    max-width: 280px;
+    min-width: 280px;
 }
 
 .decor--refund::after,
-.decor--quality::after,
-.decor--secure::after {
+.decor--quality::after {
     content: "";
     width: 90px;
     height: 90px;
     position: absolute;
     top: 55px;
+    left: 50%;
+    right: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
+}
+
+.decor--secure::after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 51px;
     left: 50%;
     right: 50%;
     background-repeat: no-repeat;
@@ -61,6 +75,8 @@
 
 
 .advantages__block-title {
+    margin-top: 6px;
+    margin-bottom: 10px;
     color: #151716;
     text-align: center;
     font-family: "Orenburg", sans-serif;
@@ -69,6 +85,7 @@
 }
 
 .advantages__block-text {
+    margin-bottom: 0;
     color: #7B7B7B;
     text-align: center;
     font-family: "PT Sans", sans-serif;
