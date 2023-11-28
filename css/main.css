@@ -365,8 +365,8 @@ a:hover {
 
 .burger span {
   display: inline-block;
-  height: 2px;
   width: 17px;
+  height: 2px;
   transform: scale(1);
   background-color: #716F6F;
 }
@@ -378,7 +378,7 @@ a:hover {
   height: 2px;
   width: 100%;
   background-color: #716F6F;
-  transition: all 0.3s else 0s;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger::before {
@@ -391,18 +391,31 @@ a:hover {
   bottom: 0;
 }
 
+.burger.active {
+  transform: rotate(180deg);
+  transition: transform 0.8s ease-in-out;
+}
+
 .burger.active span {
   transform: scale(0);
 }
 
 .burger.active::before {
-  top: 50%;
-  transform: rotate(-45deg) translate(0, -50%);
+  width: 18.9px;
+  height: 3px;
+  top: 63%;
+  left: 0;
+  transform: translateY(-4px) rotate(59deg);
+  background-color: #ffffff;
 }
 
 .burger.active::after {
-  bottom: 50%;
-  transform: rotate(45deg) translate(0, 50%);
+  left: -1px;
+  width: 19.9px;
+  height: 3px;
+  bottom: 140%;
+  transform: translateY(14px) rotate(309deg);
+  background-color: #ffffff;
 }
 
 @media (max-width: 400px) {
