@@ -171,6 +171,11 @@ a:hover {
   margin: 0 0 0 auto;
   padding: 0;
 }
+@media screen and (max-width: 400px) {
+  .main__header-profile-menu-list {
+    align-items: stretch;
+  }
+}
 
 .main__header-profile-menu-link {
   text-decoration: none;
@@ -205,8 +210,8 @@ a:hover {
 }
 
 .main__header-profile-menu-search-icon {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   display: inline-block;
   margin-left: 32px;
 }
@@ -329,12 +334,12 @@ a:hover {
   display: none;
   width: 95px;
   min-height: 32px;
-  padding: 9px 10px 9px;
+  padding: 11px 10px 11px;
   margin-left: 12px;
   align-items: center;
   -moz-column-gap: 12px;
        column-gap: 12px;
-  border: 2px solid #494949;
+  border: 1px solid #494949;
   border-radius: 2px;
 }
 
