@@ -78,19 +78,21 @@
 }
 
 .main__header-profile-menu-search-icon {
+    width: 42px;
+    height: 42px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('../../images/header-search.svg');
-    background-repeat: no-repeat;
-    background-position: center;
     margin-left: 32px;
-    padding: 20px;
-    border-radius: 2px;
-    border: 1px solid #494949;
+
+    svg {
+        stroke: #EC7133;
+    }
 
     @media screen and (max-width:400px) {
         margin-left: 0px;
+
+        svg {
+            stroke: #716F6F;
+        }
     }
 }
 
@@ -197,4 +199,97 @@
 
 }
 
-.main-footer {}
+/* Burger */
+.burger__wrapper {
+    display: none;
+    width: 95px;
+    min-height: 32px;
+    padding: 9px 10px 9px;
+    margin-left: 12px;
+    align-items: center;
+    column-gap: 12px;
+    border: 2px solid #494949;
+    border-radius: 2px;
+}
+
+.burger-text {
+    display: block;
+    color: #FFF;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.burger {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 17px;
+    height: 14px;
+}
+
+.burger span {
+    display: inline-block;
+    height: 2px;
+    width: 17px;
+    transform: scale(1);
+    background-color: #716F6F;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #716F6F;
+    transition: all 0.3s else 0s;
+}
+
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    width: 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0)
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 400px) {
+
+    .burger__wrapper {
+        display: flex;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

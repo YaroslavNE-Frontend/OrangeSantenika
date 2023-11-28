@@ -1,5 +1,5 @@
 .main-footer {
-    padding: clamp(2.5rem, 2.143rem + 1.79vw, 3.75rem) 0 clamp(2.5rem, 2.143rem + 1.79vw, 3.75rem) 0;
+    padding: clamp(2.5rem, 2.143rem + 1.79vw, 3.75rem) 0 0;
     background-color: #202122;
 }
 
@@ -164,7 +164,9 @@
 }
 
 .foooter__questions-link {
+    display: inline-block;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .questions--email {
