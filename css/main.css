@@ -149,11 +149,11 @@ a:hover {
   right: 0;
   padding: 20px 0;
   z-index: 2;
-  background-color: #202122;
 }
 
 .main__header--catalog {
   position: static;
+  background-color: #202122;
 }
 
 .main__header-nav {
@@ -184,6 +184,7 @@ a:hover {
 }
 
 .main__header-menu-list {
+  position: relative;
   display: flex;
   list-style: none;
   padding: 0;
@@ -193,6 +194,7 @@ a:hover {
 }
 
 .main__header-menu-link {
+  padding: 0 30px 0 0;
   text-decoration: none;
   color: #BEBEBE;
   font-family: "Orenburg", sans-serif;
@@ -202,12 +204,28 @@ a:hover {
   letter-spacing: 0.3px;
 }
 
+.main__header-menu-link__arrow {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 8px;
+  top: 15px;
+  transform: translate(-50%, -50%);
+  right: 15px;
+}
+
 .main__header-submenu-list {
-  display: none;
+  min-width: 218px;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
   list-style: none;
-  padding: 0;
+  padding: 15px 15px 0;
   margin: 0;
-  margin-top: 12px;
+  background-color: #202122;
+  z-index: 5;
 }
 
 .main__header-submenu-link {
@@ -217,6 +235,17 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.main__header-menu-list li:hover > .main__header-submenu-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+.main__header-menu-list li:hover > .main__header-menu-link__arrow svg {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
 }
 
 .main__header-profile-menu-list {
