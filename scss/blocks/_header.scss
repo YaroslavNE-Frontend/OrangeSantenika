@@ -5,6 +5,11 @@
     right: 0;
     padding: 20px 0;
     z-index: 2;
+    background-color: #202122;
+}
+
+.main__header--catalog {
+    position: static;
 }
 
 .main__header-nav {
@@ -35,11 +40,10 @@
 
 .main__header-menu-list {
     display: flex;
-    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
-    row-gap: 20px;
+    column-gap: 20px;
 }
 
 
@@ -56,6 +60,7 @@
 }
 
 .main__header-submenu-list {
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -91,7 +96,9 @@
 
 .main__header-profile-phone {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
     color: #999;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
@@ -104,8 +111,6 @@
     }
 
     & svg {
-        position: absolute;
-        left: -24px;
         fill: #999999;
         transition: all 0.3s ease-in-out;
     }
@@ -118,6 +123,38 @@
         display: none;
     }
 
+}
+
+.main__header-profile-span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.main__header-profile-menu-cart {
+    margin-left: 32px;
+    position: relative;
+    padding: 13px 18px 9px 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #494949;
+}
+
+.main__header-profile-menu-cart-svg {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translate(-50%, -50%);
+}
+
+.main__header-profile-menu-monay {
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .main__header-profile-menu-search-icon {
@@ -333,23 +370,6 @@
     background-color: #ffffff;
 }
 
-
-// .hamburger-menu-button-close {
-//     background: transparent;
-//     -webkit-transform: rotate(180deg);
-//     transform: rotate(180deg);
-// }
-
-// .hamburger-menu-button-close::before {
-//     -webkit-transform: translateY(-6px) rotate(45deg);
-//     transform: translateY(-6px) rotate(45deg);
-// }
-
-// .hamburger-menu-button-close::after {
-//     -webkit-transform: translateY(6px) rotate(-45deg);
-//     transform: translateY(6px) rotate(-45deg);
-// }
-
 @media (max-width: 400px) {
 
     .burger__wrapper {
@@ -370,3 +390,6 @@
         opacity: 1
     }
 }
+
+
+// catalog__header

@@ -11,7 +11,7 @@
 
 <body>
     <div class="main-container">
-        <header class="main__header">
+        <header class="main__header main__header--catalog">
             <nav class="main__header-nav">
                 <a class="main__header-logo">
                     <img src="./images/logo.svg" width="126" height="35" alt="Логотип сайта">
@@ -25,7 +25,7 @@
                     </li>
                     <li class="main__header-menu-item">
                         <a class="main__header-menu-link" href="#">Каталог товаров</a>
-                        <ul class="main__header-submenu-list none">
+                        <ul class="main__header-submenu-list">
                             <li class="main__header-submenu-item">
                                 <a class="main__header-submenu-link" href="#">Смесители</a>
                             </li>
@@ -46,21 +46,87 @@
                 </ul>
                 <ul class="main__header-profile-menu-list">
                     <li class="main__header-profile-menu-item">
-                        <a class="main__header-profile-menu-link" href="tel:+79055432345">+7 (905) 543 23 45</a>
+                        <a class="main__header-profile-menu-link main__header-profile-phone" href="tel:+79055432345">
+                            <span class="main__header-profile-span">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5703_666)">
+                                        <path
+                                            d="M13.75 1.25H6.25C5.55937 1.25 5 1.80937 5 2.5V17.5C5 18.1906 5.55937 18.75 6.25 18.75H13.75C14.4406 18.75 15 18.1906 15 17.5V2.5C15 1.80937 14.4406 1.25 13.75 1.25ZM10 17.5C9.655 17.5 9.375 17.22 9.375 16.875C9.375 16.53 9.655 16.25 10 16.25C10.345 16.25 10.625 16.53 10.625 16.875C10.625 17.22 10.345 17.5 10 17.5ZM13.75 15.625H6.25V3.125H13.75V15.625Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5703_666">
+                                            <rect width="20" height="20" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>+7 (905) 543 23 45</a>
                     </li>
                     <li class="main__header-profile-menu-item">
                         <a class="main__header-profile-menu-link main__header-profile-menu-cart" href="#">
-                            <span class="visually-hidden">Корцина</span>
+                            <span class="visually-hidden">Корзина</span>
+                            <svg class="main__header-profile-menu-cart-svg" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <g clip-path="url(#clip0_5799_679)">
+                                    <path
+                                        d="M1.82617 3.5H4.00008C4.43487 5.23913 5.39139 9.06522 5.73921 10.4565C6.174 12.1957 6.60878 12.6304 8.34791 12.6304C9.65226 12.6304 12.6957 12.5 14 12.5C17.4999 12.5 17.5 11 18.1305 5.67391C12.3914 5.67391 8.65226 5.67391 7.78269 5.67391"
+                                        stroke="#F5702C" stroke-width="1.6" stroke-linecap="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.34851 18.5C8.309 18.5 9.08764 17.7214 9.08764 16.7609C9.08764 15.8004 8.309 15.0217 7.34851 15.0217C6.38801 15.0217 5.60938 15.8004 5.60938 16.7609C5.60938 17.7214 6.38801 18.5 7.34851 18.5ZM14.4344 18.5C15.3949 18.5 16.1736 17.7214 16.1736 16.7609C16.1736 15.8004 15.3949 15.0217 14.4344 15.0217C13.4739 15.0217 12.6953 15.8004 12.6953 16.7609C12.6953 17.7214 13.4739 18.5 14.4344 18.5Z"
+                                        fill="#F5702C" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5799_679">
+                                        <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
                             <span class="main__header-profile-menu-monay">4 290 ₽</span>
                         </a>
                     </li>
                     <li class="main__header-profile-menu-item">
-                        <a class="main__header-profile-menu-link main__header-profile-menu-avatar" href="#">
+                        <a class="main__header-profile-menu-link main__header-profile-menu-search-icon" href="#"
+                            type="button">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="2.5" stroke="#494949" />
+                                <g clip-path="url(#clip0_5799_687)">
+                                    <path
+                                        d="M12.6666 28.5C12.6666 28.5 12.2499 24.3333 16.8333 24.3333C21.4166 24.3333 20.5937 24.3333 25.1718 24.3333C29.7499 24.3333 29.3385 28.5 29.3385 28.5"
+                                        stroke="#EC7133" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M21.0002 21.8333C23.3013 21.8333 25.1668 19.9679 25.1668 17.6667C25.1668 15.3655 23.3013 13.5 21.0002 13.5C18.699 13.5 16.8335 15.3655 16.8335 17.6667C16.8335 19.9679 18.699 21.8333 21.0002 21.8333Z"
+                                        stroke="#EC7133" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5799_687">
+                                        <rect width="20" height="20" fill="white" transform="translate(11 11)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
                             <span class="visually-hidden">Профиль</span>
                         </a>
                     </li>
                     <li class="main__header-profile-menu-item">
-                        <a class="main__header-profile-menu-link main__header-profile-menu-search" href="#">
+                        <a class="main__header-profile-menu-link main__header-profile-menu-search-icon" href="#"
+                            type="button">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="2.5" stroke="#494949"></rect>
+                                <g clip-path="url(#clip0_5787_689)">
+                                    <path
+                                        d="M19.3333 25.1667C22.555 25.1667 25.1667 22.555 25.1667 19.3333C25.1667 16.1117 22.555 13.5 19.3333 13.5C16.1117 13.5 13.5 16.1117 13.5 19.3333C13.5 22.555 16.1117 25.1667 19.3333 25.1667Z"
+                                        stroke-width="2"></path>
+                                    <path d="M23.5 23.5L28.5 28.5" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5787_689">
+                                        <rect width="20" height="20" fill="white" transform="translate(11 11)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                             <span class="visually-hidden">Поиск</span>
                         </a>
                     </li>
@@ -68,8 +134,82 @@
             </nav>
         </header>
         <main class="main">
+            <section>dasddasdd</section>
         </main>
         <footer class="main-footer">
+            <div class="main-footer__wrapper">
+                <div class="main-footer__top">
+                    <a class="footer-logo" href="#">
+                        <img width="126" height="35" src="./images/logo.svg" alt="логотип подвала сайта">
+                    </a>
+                    <ul class="foooter__ifo-list">
+                        <li class="foooter__ifo-item">
+                            <a class="foooter__ifo-link" href="#">О компании</a>
+                        </li>
+                        <li class="foooter__ifo-item">
+                            <a class="foooter__ifo-link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="foooter__ifo-item">
+                            <a class="foooter__ifo-link" href="#">Покупателям</a>
+                        </li>
+                    </ul>
+                    <ul class="foooter__ifo-list-2">
+                        <li class="foooter__ifo-item-2">
+                            <a class="foooter__ifo-link-2" href="#">Где купить</a>
+                        </li>
+                        <li class="foooter__ifo-item-2">
+                            <a class="foooter__ifo-link-2" href="#">Сервисное обслуживание</a>
+                        </li>
+                        <li class="foooter__ifo-item-2">
+                            <a class="foooter__ifo-link-2" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="foooter__questions-list">
+                        <li class="foooter__questions-item">
+                            <h3 class="foooter__questions-title">Есть вопросы?</h3>
+                        </li>
+                        <li class="foooter__questions-item">
+                            <a href="mailto:hello@orangemixers.ru"
+                                class="foooter__questions-link questions--email">hello@orangemixers.ru</a>
+                        </li>
+                        <li class="foooter__questions-item">
+                            <a href="tel:+74955432345" class="foooter__questions-link questions--phone">+7 (495) 543 23
+                                45</a>
+                        </li>
+                    </ul>
+                    <ul class="foooter__social-list">
+                        <li class="foooter__questions-item">
+                            <h3 class="foooter__questions-title">Мы в соцсетях</h3>
+                        </li>
+                        <li class="foooter__questions-item">
+                            <a class="foooter__questions-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19 1C14.1115 1 13.4985 1.02072 11.5786 1.10832C9.66273 1.1957 8.35425 1.50002 7.20932 1.94501C6.02566 2.40494 5.02184 3.02042 4.0211 4.0211C3.02042 5.02184 2.40494 6.02566 1.94501 7.20932C1.50002 8.35425 1.1957 9.66273 1.10832 11.5786C1.02072 13.4985 1 14.1115 1 19C1 23.8885 1.02072 24.5015 1.10832 26.4214C1.1957 28.3373 1.50002 29.6458 1.94501 30.7907C2.40494 31.9744 3.02042 32.9782 4.0211 33.9789C5.02184 34.9796 6.02566 35.5951 7.20932 36.0551C8.35425 36.5 9.66273 36.8043 11.5786 36.8917C13.4985 36.9793 14.1115 37 19 37C23.8885 37 24.5015 36.9793 26.4214 36.8917C28.3373 36.8043 29.6458 36.5 30.7907 36.0551C31.9743 35.5951 32.9782 34.9796 33.9789 33.9789C34.9796 32.9782 35.5951 31.9744 36.0551 30.7907C36.5 29.6458 36.8043 28.3373 36.8917 26.4214C36.9793 24.5015 37 23.8885 37 19C37 14.1115 36.9793 13.4985 36.8917 11.5786C36.8043 9.66273 36.5 8.35425 36.0551 7.20932C35.5951 6.02566 34.9796 5.02184 33.9789 4.0211C32.9782 3.02042 31.9743 2.40494 30.7907 1.94501C29.6458 1.50002 28.3373 1.1957 26.4214 1.10832C24.5015 1.02072 23.8885 1 19 1Z"
+                                        stroke="#FE5B00" stroke-width="2" />
+                                    <path
+                                        d="M19.0078 26.9941C23.4261 26.9941 27.0078 23.4124 27.0078 18.9941C27.0078 14.5759 23.4261 10.9941 19.0078 10.9941C14.5895 10.9941 11.0078 14.5759 11.0078 18.9941C11.0078 23.4124 14.5895 26.9941 19.0078 26.9941Z"
+                                        stroke="#FE5B00" stroke-width="2" />
+                                    <path
+                                        d="M31.0078 8.49414C31.0078 9.32257 30.3362 9.99414 29.5078 9.99414C28.6794 9.99414 28.0078 9.32257 28.0078 8.49414C28.0078 7.66571 28.6794 6.99414 29.5078 6.99414C30.3362 6.99414 31.0078 7.66571 31.0078 8.49414Z"
+                                        fill="#333333" stroke="#FE5B00" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-footer__copyright">
+                    <p class="main-footer__copyright-text">© 2019 Orange Mixers</p>
+                    <a class="main-footer__copyright-link" href="#">Разработано в bitberry.ru</a>
+                </div>
+            </div>
+            <div class="main-footer__arrow" id="main-footer__arrow" onclick="goUp();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="18" viewBox="0 0 42 18" fill="none">
+                    <path d="M39.666 16L20.9993 2L2.33264 16" stroke="#484848" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
         </footer>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=61dd4420-8fb2-48eb-ac23-2658d95b75e2&lang=ru_RU"
             type="text/javascript"></script>
