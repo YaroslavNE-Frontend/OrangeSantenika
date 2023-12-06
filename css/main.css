@@ -380,6 +380,7 @@ a:hover {
 
 /* Burger */
 .burger__wrapper {
+  position: relative;
   display: none;
   width: 95px;
   min-height: 32px;
@@ -399,7 +400,6 @@ a:hover {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px;
 }
 
 .burger {
@@ -409,14 +409,13 @@ a:hover {
   align-items: center;
   justify-content: flex-end;
   width: 17px;
-  height: 14px;
+  height: 12px;
 }
 
 .burger span {
-  display: inline-block;
+  display: block;
   width: 17px;
   height: 2px;
-  transform: scale(1);
   background-color: #716F6F;
 }
 
@@ -435,12 +434,14 @@ a:hover {
 }
 
 .burger::after {
-  width: 15px;
+  width: 14px;
   left: 0;
   bottom: 0;
 }
 
 .burger.active {
+  width: 14px;
+  height: 14px;
   transform: rotate(180deg);
   transition: transform 0.8s ease-in-out;
 }
@@ -450,26 +451,28 @@ a:hover {
 }
 
 .burger.active::before {
-  width: 18.9px;
-  height: 3px;
-  top: 63%;
-  left: 0;
-  transform: translateY(-4px) rotate(59deg);
+  width: 16px;
+  height: 2px;
+  top: 70%;
+  left: -2px;
+  transform: translateY(-4px) rotate(44deg);
   background-color: #ffffff;
 }
 
 .burger.active::after {
-  left: -1px;
-  width: 19.9px;
-  height: 3px;
-  bottom: 140%;
-  transform: translateY(14px) rotate(309deg);
+  width: 17px;
+  height: 2px;
+  bottom: 143%;
+  left: -2px;
+  transform: translateY(14px) rotate(316deg);
   background-color: #ffffff;
 }
 
 @media (max-width: 400px) {
   .burger__wrapper {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 10;
   }
